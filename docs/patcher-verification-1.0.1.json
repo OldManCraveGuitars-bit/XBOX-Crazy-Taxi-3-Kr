@@ -1,0 +1,75 @@
+{
+  "patcher_version": "1.0.1",
+  "passed": true,
+  "unit_tests": 15,
+  "form_layout_check_passed": true,
+  "integration_tests": [
+    {
+      "name": "payload-resource-check",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.226
+    },
+    {
+      "name": "real-japan-iso-apply",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 9.442
+    },
+    {
+      "name": "source-overwrite-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.118
+    },
+    {
+      "name": "existing-output-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.122
+    },
+    {
+      "name": "wrong-source-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.127
+    },
+    {
+      "name": "report-source-overwrite-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.104
+    },
+    {
+      "name": "report-output-collision-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.108
+    },
+    {
+      "name": "unknown-options-rejected",
+      "passed": true,
+      "exit_code": 1,
+      "seconds": 0.106
+    }
+  ],
+  "source_preserved": true,
+  "output_sha256": "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8",
+  "output_bytes": 397672448,
+  "source_sha256": "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26",
+  "exe_sha256": "bd7a9329574e9b131a5fa80f488c6a3a667ec0e8649f936e6e2994540edd1d22",
+  "exe_bytes": 1228800,
+  "managed_il_only": true,
+  "native_imports": [
+    "mscoree.dll"
+  ],
+  "embedded_resources": [
+    "CT3.patch"
+  ],
+  "external_process_execution": false,
+  "runtime_executable_extraction": false,
+  "network_functionality": false,
+  "administrator_required": false,
+  "game_content_changed": false,
+  "game_content_revision": "r18"
+}

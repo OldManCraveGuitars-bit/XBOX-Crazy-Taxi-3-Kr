@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-07",
+  "antivirus": "Microsoft Defender Antivirus",
+  "definition_version": "1.463.169.0",
+  "definition_last_updated": "2026-11-07T06:12:16+09:00",
+  "engine_version": "1.1.26100.4",
+  "product_version": "4.18.26100.4",
+  "antivirus_enabled": true,
+  "real_time_protection_enabled": true,
+  "scans": [
+    {
+      "file": "XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher.exe",
+      "sha256": "931e2428ab23ecca2112008e0bf56714b8ff6d2a19248d68718a503e223af58c",
+      "scan_started": "2026-11-07T12:31:18.4175935+09:00",
+      "scan_completed": "2026-11-07T12:31:18.4191742+09:00",
+      "scan_id": "{6AA3CC6E-7D89-4CD1-89BB-E9B742D9ABD8}",
+      "completed_event": 1001,
+      "matching_threat_events": 0
+    },
+    {
+      "file": "XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe",
+      "sha256": "bd7a9329574e9b131a5fa80f488c6a3a667ec0e8649f936e6e2994540edd1d22",
+      "scan_started": "2026-11-07T12:39:05.7314595+09:00",
+      "scan_completed": "2026-11-07T12:39:05.8493642+09:00",
+      "scan_id": "{4256D9D4-6928-4CE0-BC76-4239671881AC}",
+      "completed_event": 1001,
+      "matching_threat_events": 0
+    }
+  ],
+  "original_user_av_product_and_detection_name_known": false,
+  "original_report_reproduced": false,
+  "code_signing_status": "Unsigned",
+  "limitation": "No threats detected by this local Defender scan; no claim about all antivirus products or SmartScreen reputation."
+}

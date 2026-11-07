@@ -1,0 +1,12 @@
+{
+  "copy_bytes": 391501518,
+  "literal_bytes": 5722396,
+  "zero_bytes": 448534,
+  "operations": 9781,
+  "identical_files": 391,
+  "changed_files": 10,
+  "bytes": 1203683,
+  "sha256": "1b642f4d52cda08c1598f704f2c0d793786823997d3a917e6c5edf85e8741ef3",
+  "source_sha256": "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26",
+  "output_sha256": "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8"
+}

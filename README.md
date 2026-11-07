@@ -7,11 +7,13 @@
 
 상단 이미지는 이번 패치에 적용한 한글 타이틀 리소스 미리보기입니다.
 
+**배포 패처를 1.0.1로 교체했습니다.** 기존 EXE는 탐지 제보 조사 후 회수하고, 실행 파일을 임시로 추출하지 않는 C#/.NET EXE로 다시 제작했습니다. 게임 한글 패치 내용과 생성 ISO는 V1.0과 동일합니다. [검사 결과와 변경 내용](docs/SECURITY.md)을 공개합니다.
+
 ## 다운로드
 
-**[V1.0 EXE 패처 받기](https://github.com/OldManCraveGuitars-bit/XBOX-Crazy-Taxi-3-Kr/releases/tag/v1.0.0)**
+**[V1.0 한글 패치 · EXE 패처 1.0.1 받기](https://github.com/OldManCraveGuitars-bit/XBOX-Crazy-Taxi-3-Kr/releases/tag/v1.0.1)**
 
-Windows 10/11 x64용 단일 EXE입니다. Python 설치나 인터넷 연결 없이 사용할 수 있습니다. 게임 ISO·실행 파일·음원은 배포하지 않으며, 아래 해시와 일치하는 원본 ISO를 직접 준비해야 합니다.
+Windows 10/11의 .NET Framework 4.x를 사용하는 단일 EXE입니다. Python 설치나 인터넷 연결 없이 사용할 수 있습니다. 패처 EXE 외에 원작 게임 ISO·XBE·음원은 배포하지 않으며, 아래 해시와 일치하는 원본 ISO를 직접 준비해야 합니다.
 
 ## 작업 내용
 
@@ -25,13 +27,13 @@ Windows 10/11 x64용 단일 EXE입니다. Python 설치나 인터넷 연결 없�
 
 ## 사용법
 
-1. 릴리스에서 `XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher.exe`를 받습니다.
+1. 릴리스에서 `XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe`를 받습니다.
 2. 실행 후 **Japan (En,Ja) 원본 ISO**와 **새 ISO 저장 경로**를 선택합니다.
 3. **한글 패치 시작**을 누르고 결과 SHA-256 검증 완료를 기다립니다.
 
-패처는 원본을 덮어쓰지 않습니다. 이미 있는 출력 파일도 덮어쓰지 않으므로 새 파일 이름을 지정해 주세요. 패치와 xdelta 엔진은 EXE 안에 포함되어 있습니다. 별도 `.xdelta` 파일은 다른 패치 도구를 사용하는 경우를 위해 함께 배포합니다.
+패처는 원본을 덮어쓰지 않습니다. 이미 있는 출력 파일도 덮어쓰지 않으므로 새 파일 이름을 지정해 주세요. EXE에는 오프셋·길이·변경 데이터만 담은 패치가 포함되어 있습니다. 별도의 프로그램을 추출하거나 실행하지 않으며, 관리자 권한도 요구하지 않습니다. 별도 `.xdelta` 파일은 다른 패치 도구를 사용하는 경우를 위해 함께 배포합니다.
 
-원본 ISO는 **395,313,152 바이트**, 생성되는 한글 XISO는 **397,672,448 바이트**입니다. 출력 드라이브에는 최소 450 MB, Windows 임시 폴더에는 약 50 MB의 여유 공간을 확보해 주세요. 지역·파일명이 같더라도 덤프 구조나 내용이 다르면 해시 검증에서 거부됩니다. 이미 패치한 ISO에는 다시 적용할 수 없습니다.
+원본 ISO는 **395,313,152 바이트**, 생성되는 한글 XISO는 **397,672,448 바이트**입니다. 출력 드라이브에는 최소 450 MB의 여유 공간을 확보해 주세요. 검증 중인 ISO 임시 파일은 선택한 출력 폴더에 만들고, 검증 통과 후 새 ISO 이름으로 저장합니다. 지역·파일명이 같더라도 덤프 구조나 내용이 다르면 해시 검증에서 거부됩니다. 이미 패치한 ISO에는 다시 적용할 수 없습니다.
 
 실기에서 실행하려면 수정된 XBE 실행을 지원하는 환경이 필요합니다. 기기에 맞는 기존 방식으로 한글 ISO 또는 추출한 게임 파일을 사용하세요.
 
@@ -44,15 +46,15 @@ Windows 10/11 x64용 단일 EXE입니다. Python 설치나 인터넷 연결 없�
 | Japan (En,Ja) 원본 ISO | `63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26` |
 | V1.0 한글 ISO | `71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8` |
 | `CT3-Korean-v1.0.xdelta` | `a06ffcadaa1f935a8bf8b322432714a251487f02929ee439138e602dfb1192d0` |
-| `XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher.exe` | `931e2428ab23ecca2112008e0bf56714b8ff6d2a19248d68718a503e223af58c` |
+| `XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe` | `bd7a9329574e9b131a5fa80f488c6a3a667ec0e8649f936e6e2994540edd1d22` |
 
 Windows PowerShell에서 수동 확인하는 예시입니다.
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe'
 ```
 
-릴리스의 `SHA256SUMS.txt`와 [패치 명세](patches/manifest.json)에도 해시를 기록했습니다. 패처 자체는 코드 서명되어 있지 않으며, 해시는 전자서명을 대신하지 않습니다.
+릴리스의 `SHA256SUMS.txt`와 [패치 명세](patches/manifest.json)에도 해시를 기록했습니다. 최신 정의 `1.463.169.0`의 Microsoft Defender 사용자 지정 검사에서 새 EXE의 위협이 탐지되지 않았습니다. [검사 기록](docs/antivirus-check-1.0.1.json)을 참고하세요. 이 결과는 모든 백신의 판정을 보증하지 않습니다. 패처는 코드 서명되어 있지 않아 발행자·평판 경고가 표시될 수 있으며, 해시는 전자서명을 대신하지 않습니다.
 
 ## 검수 및 알려진 사항
 
@@ -66,18 +68,17 @@ Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher
 
 ## 패처 소스
 
-이 저장소에는 배포용 EXE 패처의 Python 소스, 차이 패치와 검증 명세를 포함합니다.
+이 저장소에는 배포용 EXE 패처의 C# 소스, 데이터 차이 패치와 검증 명세를 포함합니다. Windows 내장 .NET Framework C# 컴파일러를 사용하며 별도 패키지 설치가 필요 없습니다.
 
 ```powershell
-python -m pip install -r requirements-build.txt
-python -m unittest discover -s src -v
-python build.py
+.\tests\run.cmd
+.\build.cmd
 ```
 
-Windows x64와 Python 3.13에서 빌드했습니다. 결과 EXE는 `dist` 폴더에 생성됩니다. 명령줄 적용도 지원합니다.
+결과 EXE는 `dist` 폴더에 생성됩니다. 명령줄 적용도 지원합니다. `--report`에는 기존 파일과 겹치지 않는 새 JSON 경로를 지정하세요.
 
 ```powershell
-.\XBOX-Crazy-Taxi-3-Kr-v1.0-Patcher.exe --source '원본.iso' --output '한글.iso' --report '결과.json'
+.\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe --source '원본.iso' --output '한글.iso' --report '결과.json'
 ```
 
-게임 및 원작 그래픽·음악의 권리는 각 권리자에게 있습니다. 이 패치는 SEGA의 공식 한국어판이 아닙니다. 포함된 도구의 라이선스는 [licenses](licenses/THIRD-PARTY.md)를 참고하세요.
+패치 데이터 형식은 [PATCH-FORMAT.md](docs/PATCH-FORMAT.md)에 공개했습니다. 게임 및 원작 그래픽·음악의 권리는 각 권리자에게 있습니다. 이 패치는 SEGA의 공식 한국어판이 아닙니다.

@@ -1,3 +1,5 @@
+> 초기 EXE 패처는 보안 경고 제보 후 회수했습니다. [현재 패처 1.0.1](https://github.com/OldManCraveGuitars-bit/XBOX-Crazy-Taxi-3-Kr/releases/tag/v1.0.1)을 사용하세요. 아래는 초기 배포 당시의 기록입니다.
+
 **크레이지 택시 3: 하이 롤러 — V1.0 비공식 한글판 정식버젼**
 
 **Korea Localized by GiKakNo**
