@@ -1,0 +1,11 @@
+/dist/
+/build/
+/build-log.txt
+__pycache__/
+*.pyc
+*.spec
+*.iso
+*.xbe
+*.adx
+*.afs
+*.partial

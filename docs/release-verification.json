@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "passed": true,
+  "patcher_unit_tests": 11,
+  "frozen_exe_tests": [
+    {
+      "test": "frozen-payload",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 1.97
+    },
+    {
+      "test": "frozen-real-apply",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 6.38
+    },
+    {
+      "test": "frozen-source-as-output",
+      "exit_code": 1,
+      "passed": true,
+      "seconds": 1.59
+    },
+    {
+      "test": "frozen-wrong-source",
+      "exit_code": 1,
+      "passed": true,
+      "seconds": 1.57
+    },
+    {
+      "test": "frozen-existing-output",
+      "exit_code": 1,
+      "passed": true,
+      "seconds": 1.88
+    },
+    {
+      "test": "frozen-report-protects-original",
+      "exit_code": 1,
+      "passed": true,
+      "seconds": 1.76
+    },
+    {
+      "test": "frozen-report-output-collision",
+      "exit_code": 1,
+      "passed": true,
+      "seconds": 1.69
+    }
+  ],
+  "original_preserved": true,
+  "output_verified": true,
+  "source_sha256": "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26",
+  "output_sha256": "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8",
+  "patcher_sha256": "931e2428ab23ecca2112008e0bf56714b8ff6d2a19248d68718a503e223af58c",
+  "patcher_bytes": 12953158,
+  "bundled_patch_engine_and_vc_runtime": true,
+  "game_content_revision": "r18",
+  "game_file_count": 401,
+  "modified_game_files": 10,
+  "unchanged_game_files": 391,
+  "ui_layout_executions": 1446,
+  "x86_test_groups": 53,
+  "lyric_cues": 260,
+  "captioned_recordings": 12,
+  "recordings": 17,
+  "complete_lyric_coverage_verified": false,
+  "direct_listening_verified": false,
+  "hardware_test_performed": false
+}

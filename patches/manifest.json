@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "title": "Crazy Taxi 3: High Roller",
+  "region": "Japan (En,Ja)",
+  "credit": "Korea Localized by GiKakNo",
+  "source": {
+    "filename": "Crazy Taxi 3 - High Roller (Japan) (En,Ja).iso",
+    "bytes": 395313152,
+    "sha256": "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26"
+  },
+  "output": {
+    "filename": "Crazy Taxi 3 (Japan) [Korean V1.0].iso",
+    "bytes": 397672448,
+    "sha256": "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8"
+  },
+  "patch": {
+    "file": "patches/CT3-Korean-v1.0.xdelta",
+    "bytes": 1266601,
+    "sha256": "a06ffcadaa1f935a8bf8b322432714a251487f02929ee439138e602dfb1192d0"
+  },
+  "engine": {
+    "file": "vendor/xdelta3.exe",
+    "bytes": 340480,
+    "sha256": "2081fb24a7b8a89d068b58e7d9353647d5fc1512a68bb6a37f71fc60ca84d943"
+  }
+}
