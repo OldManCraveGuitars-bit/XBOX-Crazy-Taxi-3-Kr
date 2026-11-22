@@ -13,8 +13,8 @@ using System.Windows.Forms;
 [assembly: AssemblyDescription("Offline data-only ISO patcher. Korea Localized by GiKakNo")]
 [assembly: AssemblyCompany("GiKakNo")]
 [assembly: AssemblyProduct("Crazy Taxi 3 Korean Patch")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("1.0.2.0")]
+[assembly: AssemblyFileVersion("1.0.2.0")]
 
 namespace CT3Korean
 {
@@ -23,8 +23,8 @@ namespace CT3Korean
         public static readonly PatchSpec Spec = new PatchSpec {
             SourceBytes = 395313152, OutputBytes = 397672448,
             SourceSha256 = "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26",
-            OutputSha256 = "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8",
-            PayloadSha256 = "1b642f4d52cda08c1598f704f2c0d793786823997d3a917e6c5edf85e8741ef3"
+            OutputSha256 = "b62b2b591f43259e8f8a3f0c273c44de784cde0dc206c21b9238bf1a9dcba379",
+            PayloadSha256 = "d54da37d30aaa8f965adcea9e596569fbfe7eb93256c8c2a9cfab7a79600ca5c"
         };
 
         public static byte[] Payload()
@@ -91,7 +91,7 @@ namespace CT3Korean
                 {
                     if (source != null || output != null) throw new ArgumentException("--self-test는 ISO 적용 옵션과 함께 사용할 수 없습니다.");
                     PatchEngine.ValidatePayload(payload, Spec);
-                    result = new { verified = true, patcher_version = "1.0.1", payload_sha256 = PatchEngine.Hash(payload),
+                    result = new { verified = true, patcher_version = "1.0.2", payload_sha256 = PatchEngine.Hash(payload),
                         source_sha256 = Spec.SourceSha256, output_sha256 = Spec.OutputSha256,
                         embedded_resources = Assembly.GetExecutingAssembly().GetManifestResourceNames() };
                 }
@@ -104,7 +104,7 @@ namespace CT3Korean
             }
             catch (Exception error)
             {
-                result = new { verified = false, error = error.Message, patcher_version = "1.0.1" };
+                result = new { verified = false, error = error.Message, patcher_version = "1.0.2" };
                 exitCode = 1;
             }
             string json = new JavaScriptSerializer().Serialize(result);
@@ -141,7 +141,7 @@ namespace CT3Korean
 
         public PatcherForm()
         {
-            Text = "Crazy Taxi 3 · 한글 패처 1.0.1";
+            Text = "Crazy Taxi 3 · 한글 패처 1.0.2";
             AutoScaleDimensions = new SizeF(96, 96);
             AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(780, 510);
@@ -156,7 +156,7 @@ namespace CT3Korean
             Controls.Add(layout);
             for (int i = 0; i < 10; i++) layout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             AddWide(layout, TextLabel("CRAZY TAXI 3 / 한국어", 23, Color.FromArgb(255, 211, 42), true), 0);
-            AddWide(layout, TextLabel("게임 V1.0 · 패처 1.0.1  |  Korea Localized by GiKakNo", 10, ForeColor, false), 1);
+            AddWide(layout, TextLabel("게임 V1.0.2 · 패처 1.0.2  |  Korea Localized by GiKakNo", 10, ForeColor, false), 1);
             AddWide(layout, TextLabel("1. Japan (En,Ja) 원본 ISO", 10, ForeColor, false), 2);
             ConfigureRow(layout, sourceBox, sourceButton, "원본 선택", 3);
             AddWide(layout, TextLabel("2. 한글 ISO를 저장할 새 경로", 10, ForeColor, false), 4);
@@ -221,13 +221,13 @@ namespace CT3Korean
             {
                 if (dialog.ShowDialog(this) != DialogResult.OK) return;
                 sourceBox.Text = dialog.FileName;
-                if (outputBox.Text.Length == 0) outputBox.Text = Path.Combine(Path.GetDirectoryName(dialog.FileName), "Crazy Taxi 3 (Japan) [Korean V1.0].iso");
+                if (outputBox.Text.Length == 0) outputBox.Text = Path.Combine(Path.GetDirectoryName(dialog.FileName), "Crazy Taxi 3 (Japan) [Korean V1.0.2].iso");
             }
         }
 
         private void ChooseOutput(object sender, EventArgs args)
         {
-            using (SaveFileDialog dialog = new SaveFileDialog { Title = "새 한글 ISO 경로", Filter = "ISO 이미지|*.iso", FileName = "Crazy Taxi 3 (Japan) [Korean V1.0].iso", DefaultExt = "iso" })
+            using (SaveFileDialog dialog = new SaveFileDialog { Title = "새 한글 ISO 경로", Filter = "ISO 이미지|*.iso", FileName = "Crazy Taxi 3 (Japan) [Korean V1.0.2].iso", DefaultExt = "iso" })
             {
                 if (dialog.ShowDialog(this) == DialogResult.OK) outputBox.Text = dialog.FileName;
             }

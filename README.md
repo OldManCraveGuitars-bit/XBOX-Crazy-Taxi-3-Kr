@@ -2,16 +2,18 @@
 
 # 크레이지 택시 3: 하이 롤러
 
-**V1.0 비공식 한글판 정식버젼 · Xbox 일본판 (En,Ja)**  
+**V1.0.2 비공식 한글판 정식버젼 · Xbox 일본판 (En,Ja)**
 **Korea Localized by GiKakNo**
 
 상단 이미지는 이번 패치에 적용한 한글 타이틀 리소스 미리보기입니다.
 
-**배포 패처를 1.0.1로 교체했습니다.** 기존 EXE는 탐지 제보 조사 후 회수하고, 실행 파일을 임시로 추출하지 않는 C#/.NET EXE로 다시 제작했습니다. 게임 한글 패치 내용과 생성 ISO는 V1.0과 동일합니다. [검사 결과와 변경 내용](docs/SECURITY.md)을 공개합니다.
+**V1.0.2: 일본판 하단 안내바를 복원했습니다.** 방향 선택·A 결정·B 취소·좌우/LR 안내 11개 문구와 연결 조각 4개에 원본 망사를 복원하고, 검은 외곽선·글자 크기·기준선을 맞췄습니다. [일본판 비교와 전체 수정 내용](docs/MENU-REVIEW-1.0.2.md)을 확인하세요.
+
+패처는 1.0.1부터 임시 실행 파일을 추출하지 않는 C#/.NET 구조를 사용합니다. [이전 보안 경고 조사와 배포 구조 변경](docs/SECURITY.md)도 공개하고 있습니다.
 
 ## 다운로드
 
-**[V1.0 한글 패치 · EXE 패처 1.0.1 받기](https://github.com/OldManCraveGuitars-bit/XBOX-Crazy-Taxi-3-Kr/releases/tag/v1.0.1)**
+**[V1.0.2 한글 패치 · EXE 패처 1.0.2 받기](https://github.com/OldManCraveGuitars-bit/XBOX-Crazy-Taxi-3-Kr/releases/tag/v1.0.2)**
 
 Windows 10/11의 .NET Framework 4.x를 사용하는 단일 EXE입니다. Python 설치나 인터넷 연결 없이 사용할 수 있습니다. 패처 EXE 외에 원작 게임 ISO·XBE·음원은 배포하지 않으며, 아래 해시와 일치하는 원본 ISO를 직접 준비해야 합니다.
 
@@ -27,7 +29,7 @@ Windows 10/11의 .NET Framework 4.x를 사용하는 단일 EXE입니다. Python 
 
 ## 사용법
 
-1. 릴리스에서 `XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe`를 받습니다.
+1. 릴리스에서 `XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe`를 받습니다.
 2. 실행 후 **Japan (En,Ja) 원본 ISO**와 **새 ISO 저장 경로**를 선택합니다.
 3. **한글 패치 시작**을 누르고 결과 SHA-256 검증 완료를 기다립니다.
 
@@ -44,17 +46,17 @@ Windows 10/11의 .NET Framework 4.x를 사용하는 단일 EXE입니다. Python 
 | 대상 | SHA-256 |
 | --- | --- |
 | Japan (En,Ja) 원본 ISO | `63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26` |
-| V1.0 한글 ISO | `71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8` |
-| `CT3-Korean-v1.0.xdelta` | `a06ffcadaa1f935a8bf8b322432714a251487f02929ee439138e602dfb1192d0` |
-| `XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe` | `bd7a9329574e9b131a5fa80f488c6a3a667ec0e8649f936e6e2994540edd1d22` |
+| V1.0.2 한글 ISO | `b62b2b591f43259e8f8a3f0c273c44de784cde0dc206c21b9238bf1a9dcba379` |
+| `CT3-Korean-v1.0.xdelta` | `179211119ea72b9b2cef3559eb76850139cdbe0969ad9e269887e8f91f87c29c` |
+| `XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe` | `92ec6b7efb9c2c8510875d88f3d08da2878b6dfd6b57f9039f6f7ee4dfa75261` |
 
 Windows PowerShell에서 수동 확인하는 예시입니다.
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe'
 ```
 
-릴리스의 `SHA256SUMS.txt`와 [패치 명세](patches/manifest.json)에도 해시를 기록했습니다. 최신 정의 `1.463.169.0`의 Microsoft Defender 사용자 지정 검사에서 새 EXE의 위협이 탐지되지 않았습니다. [검사 기록](docs/antivirus-check-1.0.1.json)을 참고하세요. 이 결과는 모든 백신의 판정을 보증하지 않습니다. 패처는 코드 서명되어 있지 않아 발행자·평판 경고가 표시될 수 있으며, 해시는 전자서명을 대신하지 않습니다.
+릴리스의 `SHA256SUMS.txt`와 [패치 명세](patches/manifest.json)에도 해시를 기록했습니다. 최신 정의 `1.463.417.0`의 Microsoft Defender 사용자 지정 검사에서 새 EXE의 위협이 탐지되지 않았습니다. [검사 기록](docs/antivirus-check-1.0.2.json)을 참고하세요. 이 결과는 모든 백신의 판정을 보증하지 않습니다. 패처는 코드 서명되어 있지 않아 발행자·평판 경고가 표시될 수 있으며, 해시는 전자서명을 대신하지 않습니다.
 
 ## 검수 및 알려진 사항
 
@@ -78,7 +80,7 @@ Get-FileHash -Algorithm SHA256 -LiteralPath '.\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patch
 결과 EXE는 `dist` 폴더에 생성됩니다. 명령줄 적용도 지원합니다. `--report`에는 기존 파일과 겹치지 않는 새 JSON 경로를 지정하세요.
 
 ```powershell
-.\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe --source '원본.iso' --output '한글.iso' --report '결과.json'
+.\XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe --source '원본.iso' --output '한글.iso' --report '결과.json'
 ```
 
 패치 데이터 형식은 [PATCH-FORMAT.md](docs/PATCH-FORMAT.md)에 공개했습니다. 게임 및 원작 그래픽·음악의 권리는 각 권리자에게 있습니다. 이 패치는 SEGA의 공식 한국어판이 아닙니다.

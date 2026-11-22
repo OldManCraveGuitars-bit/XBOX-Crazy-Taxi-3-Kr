@@ -1,6 +1,6 @@
 {
-  "game_version": "1.0.0",
-  "patcher_version": "1.0.1",
+  "game_version": "1.0.2",
+  "patcher_version": "1.0.2",
   "title": "Crazy Taxi 3: High Roller",
   "region": "Japan (En,Ja)",
   "credit": "Korea Localized by GiKakNo",
@@ -10,20 +10,20 @@
     "sha256": "63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26"
   },
   "output": {
-    "filename": "Crazy Taxi 3 (Japan) [Korean V1.0].iso",
+    "filename": "Crazy Taxi 3 (Japan) [Korean V1.0.2].iso",
     "bytes": 397672448,
-    "sha256": "71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8"
+    "sha256": "b62b2b591f43259e8f8a3f0c273c44de784cde0dc206c21b9238bf1a9dcba379"
   },
   "native_patch": {
     "file": "patches/CT3-Korean-v1.0.ct3patch",
     "format": "CT3KRP01+gzip",
-    "bytes": 1203683,
-    "sha256": "1b642f4d52cda08c1598f704f2c0d793786823997d3a917e6c5edf85e8741ef3"
+    "bytes": 1207158,
+    "sha256": "d54da37d30aaa8f965adcea9e596569fbfe7eb93256c8c2a9cfab7a79600ca5c"
   },
   "xdelta_patch": {
     "file": "patches/CT3-Korean-v1.0.xdelta",
-    "bytes": 1266601,
-    "sha256": "a06ffcadaa1f935a8bf8b322432714a251487f02929ee439138e602dfb1192d0"
+    "bytes": 1270738,
+    "sha256": "179211119ea72b9b2cef3559eb76850139cdbe0969ad9e269887e8f91f87c29c"
   },
   "runtime": "Windows .NET Framework 4.x",
   "embedded_executable_or_dll": false

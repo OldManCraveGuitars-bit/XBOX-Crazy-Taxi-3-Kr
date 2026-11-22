@@ -11,7 +11,7 @@ from pathlib import Path
 import struct
 
 SOURCE_SHA = '63042c8c6abdf6e645214b47dffa8b9695b151a24c99ba2f18a513a4ef76cc26'
-TARGET_SHA = '71f18581106d3bc0f22ada87a06011a065fd941fafed82c660c382edd49f5fa8'
+TARGET_SHA = 'b62b2b591f43259e8f8a3f0c273c44de784cde0dc206c21b9238bf1a9dcba379'
 
 
 def digest(path):

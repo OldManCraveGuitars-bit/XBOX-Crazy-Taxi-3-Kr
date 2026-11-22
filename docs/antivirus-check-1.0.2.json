@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-23",
+  "file": "XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe",
+  "sha256": "92ec6b7efb9c2c8510875d88f3d08da2878b6dfd6b57f9039f6f7ee4dfa75261",
+  "bytes": 1232384,
+  "antivirus": "Microsoft Defender Antivirus",
+  "definition_version": "1.463.417.0",
+  "definition_last_updated": "2026-11-22T17:43:05+09:00",
+  "engine_version": "1.1.26100.4",
+  "antivirus_enabled": true,
+  "real_time_protection_enabled": true,
+  "scan_started": "2026-11-23T01:53:40.6453078+09:00",
+  "scan_completed": "2026-11-23T01:53:40.7506331+09:00",
+  "scan_id": "{4F9551DB-4E8D-4DD1-A547-095B2CF5465C}",
+  "completed_event": 1001,
+  "matching_threat_events": 0,
+  "code_signing_status": "Unsigned",
+  "limitation": "Local Defender check only; no guarantee about other antivirus products or reputation warnings."
+}

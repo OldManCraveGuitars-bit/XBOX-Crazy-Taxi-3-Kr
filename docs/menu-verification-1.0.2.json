@@ -1,0 +1,157 @@
+{
+  "revision": "r19",
+  "passed": true,
+  "mesh_exists_in_japanese_original": true,
+  "original_mesh_cap_index": 89,
+  "original_mesh_sha256": "f417f7d1b920ed0c7a62ca46159f111988d143b9a7f160489881f123eff3c069",
+  "changed_entries": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    90,
+    91,
+    92
+  ],
+  "common_font_pixels": 20,
+  "common_text_origin_y": 3.0,
+  "samples": [
+    {
+      "index": 77,
+      "text": "↑↓: 선택 /",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 14,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 78,
+      "text": "방향 패드: 선택 /",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 27,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 79,
+      "text": "←→: 선택 /",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 18,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 80,
+      "text": "←→·L/R: 선택 /",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 24,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 81,
+      "text": "방향 패드·L/R: 선택 /",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 30,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 82,
+      "text": "/ B:",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 3,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 83,
+      "text": "A 버튼: 결정",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 15,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 84,
+      "text": "←→: 설정",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 15,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 85,
+      "text": "방향 패드: 선택",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 22,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 86,
+      "text": "←→: 선택",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 14,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 87,
+      "text": "취소",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 8,
+      "continuation_only": false,
+      "passed": true
+    },
+    {
+      "index": 88,
+      "text": "",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 0,
+      "continuation_only": true,
+      "passed": true
+    },
+    {
+      "index": 90,
+      "text": "",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 0,
+      "continuation_only": true,
+      "passed": true
+    },
+    {
+      "index": 91,
+      "text": "",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 0,
+      "continuation_only": true,
+      "passed": true
+    },
+    {
+      "index": 92,
+      "text": "",
+      "original_mesh_preserved": true,
+      "black_outline_gap_pixels": 0,
+      "continuation_only": true,
+      "passed": true
+    }
+  ],
+  "changed_files_from_v1": [
+    "Media/Sprites/tSprites.art"
+  ],
+  "default_xbe_unchanged": true,
+  "texture_dimensions_formats_allocation_unchanged": true,
+  "audio_unchanged": true,
+  "files_compared": 401,
+  "real_game_capture": false,
+  "hardware_test_performed": false
+}

@@ -15,7 +15,7 @@ namespace CT3Korean
     public sealed class ApplyResult
     {
         public bool verified = true;
-        public string patcher_version = "1.0.1";
+        public string patcher_version = "1.0.2";
         public string output;
         public long bytes;
         public string sha256;

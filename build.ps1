@@ -12,6 +12,6 @@ New-Item -ItemType Directory -Path $ct3Output -Force | Out-Null
     /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll `
     "/win32manifest:$ct3Root\src\native\app.manifest" `
     "/resource:$ct3Root\patches\CT3-Korean-v1.0.ct3patch,CT3.patch" `
-    "/out:$ct3Output\XBOX-Crazy-Taxi-3-Kr-v1.0.1-Patcher.exe" `
+    "/out:$ct3Output\XBOX-Crazy-Taxi-3-Kr-v1.0.2-Patcher.exe" `
     "$ct3Root\src\native\PatchEngine.cs" "$ct3Root\src\native\Program.cs"
 if ($LASTEXITCODE -ne 0) { throw 'C# compilation failed.' }
